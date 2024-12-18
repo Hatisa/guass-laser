@@ -15,7 +15,7 @@ k = 2 * pi / lambda;
 zr = pi * w0^2 / lambda;
 E0 = 1e14;
 
-range = -20 *micron:40 * nano:20 *micron;
+range = -20 *micron:4 * nano:20 *micron;
 r = abs(range);
 [~, nr] = size(r);
 
@@ -27,7 +27,7 @@ r = abs(range);
 % X = repmat(x,ny,1);
 % Y = repmat(y',1,nx);
 % R = sqrt(X.^2 + Y.^2);
-z = -10 *micron:20 * nano:10*micron;
+z = -10 *micron:2 * nano:10*micron;
 [~, nz] = size(z);
 
 R = repmat(r', 1, nz);
